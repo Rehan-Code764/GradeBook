@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div id="logo"> <img src="logo.png" alt=""></div>
+            <div id="line">
+                <h1>Grade<span>Book</span></h1>
+            </div>
+            <img src="block.png" alt="" id="img">
+            <div id="tag">
+                <p>Store Student Records on Blockchain</p>
+            </div>
+            <button id="wallet"><img src="meta.png" alt="">Connect Wallet</button>
+        </div>
+    </header>
+
+    <div class="first">
+        <div class="inner">
+            <div class="welcome">
+                <h2>🎓 Welcome to GradeBook</h2>
+                <p>
+                    A decentralized application to store and verify
+                    student records on the blockchain.
+                </p>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🔐 Secure</h3>
+                    <p>On-chain Storage</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔍 Transparent</h3>
+                    <p>Verify Anytime</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>⛓️ Decentralized</h3>
+                    <p>No Central Authority</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="second">
+        <!-- Add Student Record -->
+        <div class="details">
+            <h2>🧑‍🎓 Add Student Record</h2>
+            <p>Enter student details to store on the blockchain.</p>
+
+            <div class="form">
+                <form id="Student-form">
+                    <label for="studentId">Student ID</label>
+                    <input id="studentId" type="number" placeholder="Enter the Student ID" required>
+
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" placeholder="Enter Student Name" required>
+
+                    <label for="studentMarks">Student Marks</label>
+                    <input type="number" id="studentMarks" placeholder="Enter Student Marks" min="0" max="100" required>
+
+                    <button type="submit" id="stdbut">
+                        💾 Save Record
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- View Student Record -->
+        <div class="view-details">
+            <h2>View Student Record 🔍</h2>
+            <p>Enter Student ID to fetch the record from blockchain.</p>
+
+            <form id="find">
+                <label for="record">Student ID</label>
+                <input type="number" id="record" placeholder="Enter the Student ID" required>
+
+                <button type="submit" id="findbut">
+                    🔍 Get Record
+                </button>
+            </form>
+
+            <div id="studentDetails" class="student-details">
+                <div class="empty-icon">📄</div>
+                <h3>No record found</h3>
+                <p>Enter a student ID to view the details.</p>
+            </div>
+        </div>
+    </div>
+
+
+<section class="records">
+    <div class="records-header">
+        <div>
+            <h2>📚 All Students Record</h2>
+            <p>View all stored student records</p>
+        </div>
+        <span class="record-count">Student Records</span>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Marks</th>
+                    <th>Transaction Hash</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentsTableBody">
+                <tr>
+                    <td colspan="6" class="empty-table">
+                        <div class="table-empty-icon">📄</div>
+                        <h3>No Student Records Yet</h3>
+                        <p>Add some student records to see them here.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 GradeBook DApp</p>
+    <p>Powered by Blockchain 🔗</p>
+</footer>
+<script type="module" src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f1f7;
+    color: #1e293b;
+    height: 100vh;
+
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 15px 30px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+#logo {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+span {
+    color: rgb(110, 40, 160);
+}
+
+#logo img {
+    height: 120px;
+    width: 120px;
+}
+
+
+#line {
+    border-right: 3px solid #e2e8f0;
+    padding-right: 12px;
+    padding-right: 30px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.833);
+
+}
+
+#img {
+    margin-left: 30px;
+    height: 90px;
+    width: 90px;
+}
+
+#tag {
+    font-size: 30px;
+    color: rgb(155, 138, 138);
+    
+}
+#wallet{
+    margin-left: auto;
+    background-color: #965eb4;
+    font-family: Inter;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+button img{
+    height: 30px;
+    width: 40px;
+    padding-right: 10px;
+    padding-top: 7px;
+}
+
+
+
+.first {
+    background-color: #f8fafc;
+    padding: 30px;
+}
+
+.inner {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.welcome {
+    margin-bottom: 28px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-card {
+    flex: 1;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.feature-card h3 {
+    color: #965eb4;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.second {
+    background-color: #f8fafc;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.details,
+.view-details {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    flex: 1;
+    min-width: 0;
+}
+
+.details h2,
+.view-details h2 {
+    font-size: 24px;
+    color: #1e293b;
+}
+
+.details p,
+.view-details > p {
+    margin-top: 8px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.form {
+    margin-top: 24px;
+}
+
+#Student-form,
+#find {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #965eb4;
+    box-shadow: 0 0 0 3px #965eb420;
+}
+
+#stdbut,
+#findbut {
+    background-color: #965eb4;
+    color: #ffffff;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#stdbut:hover,
+#findbut:hover {
+    background-color: #7e489d;
+}
+
+.student-details {
+    margin-top: 24px;
+    padding: 24px;
+    text-align: center;
+    background-color: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 12px;
+}
+
+.empty-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.student-details h3 {
+    color: #334155;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.student-details p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .second {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .details,
+    .view-details {
+        width: 100%;
+    }
+}
+
+
+/* All Students Record */
+.records {
+    background-color: #ffffff;
+    margin: 0 30px 30px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+}
+
+.records-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.records-header h2 {
+    color: #1e293b;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.records-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.record-count {
+    background-color: #f3e8ff;
+    color: #965eb4;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: #f8fafc;
+}
+
+th {
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+td {
+    padding: 16px;
+    color: #334155;
+    font-size: 14px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #faf7fc;
+}
+
+/* Empty table state */
+.empty-table {
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.table-empty-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.empty-table h3 {
+    font-size: 17px;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.empty-table p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .records {
+        margin: 0 16px 20px;
+        padding: 18px;
+    }
+
+    .records-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 18px 16px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+}
+
+
+
+
+

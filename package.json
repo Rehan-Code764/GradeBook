@@ -1,0 +1,14 @@
+{
+  "name": "gradebook",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.6"
+  }
+}
