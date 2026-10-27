@@ -398,6 +398,153 @@ tbody tr:hover {
 }
 
 
+/* Mobile Responsive Fix */
+body {
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 12px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    #logo,
+    #logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    #line {
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    #img {
+        width: 45px;
+        height: 45px;
+        margin-left: 0;
+    }
+
+    #tag {
+        font-size: 16px;
+    }
+
+    #wallet {
+        margin-left: auto;
+        font-size: 14px;
+        padding: 9px 12px;
+        max-width: 100%;
+    }
+
+    button img {
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        vertical-align: middle;
+    }
+
+    .first,
+    .second {
+        padding: 12px;
+    }
+
+    .inner,
+    .details,
+    .view-details {
+        padding: 16px;
+        width: 100%;
+    }
+
+    .welcome h2 {
+        font-size: 23px;
+    }
+
+    .welcome p {
+        font-size: 14px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .feature-card {
+        padding: 16px;
+        min-width: 0;
+    }
+
+    .details h2,
+    .view-details h2,
+    .records-header h2 {
+        font-size: 20px;
+    }
+
+    .records {
+        margin: 0 12px 16px;
+        padding: 14px;
+    }
+
+    .table-container {
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 16px 12px;
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 400px) {
+    #tag {
+        font-size: 13px;
+    }
+
+    #line {
+        font-size: 16px;
+        padding-right: 8px;
+    }
+
+    #wallet {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .first,
+    .second {
+        padding: 8px;
+    }
+
+    .records {
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 10px;
+    }
+}
+
+
 
 
 
